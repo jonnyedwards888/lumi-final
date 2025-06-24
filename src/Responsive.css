@@ -91,9 +91,9 @@
     width: 100% !important;
   }
   .lumi-fullbody-img {
-    width: 180px !important;
-    min-width: 140px !important;
-    max-width: 60vw !important;
+    width: 260px !important;
+    min-width: 200px !important;
+    max-width: 90vw !important;
     margin: 0.1rem 0 0 0 !important;
     align-self: flex-start !important;
     display: block !important;
@@ -465,9 +465,9 @@
     width: 100% !important;
   }
   .lumi-fullbody-img {
-    width: 140px !important;
-    min-width: 110px !important;
-    max-width: 70vw !important;
+    width: 200px !important;
+    min-width: 150px !important;
+    max-width: 95vw !important;
     margin: 0.05rem 0 0 0 !important;
     align-self: flex-start !important;
     display: block !important;
