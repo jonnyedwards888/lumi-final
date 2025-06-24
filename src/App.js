@@ -41,9 +41,6 @@ function Navbar() {
         )}
       </div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '0' }}>
-        <Link to="/solutions" className="hero-topbar-btn">Solutions</Link>
-        <Link to="/faqs" className="hero-topbar-btn">FAQs</Link>
-        <Link to="/about" className="hero-topbar-btn">About</Link>
         <a
           href="https://x.com/mylumi_ai"
           className="hero-topbar-btn hero-topbar-close-btn"
@@ -52,6 +49,9 @@ function Navbar() {
         >
           X
         </a>
+        <Link to="/solutions" className="hero-topbar-btn">Solutions</Link>
+        <Link to="/faqs" className="hero-topbar-btn">FAQs</Link>
+        <Link to="/about" className="hero-topbar-btn">About</Link>
       </div>
     </div>
   );

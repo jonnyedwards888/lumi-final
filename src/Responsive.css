@@ -40,7 +40,7 @@
     right: 0 !important;
     left: 0 !important;
     width: 100vw !important;
-    min-width: 100vw !important;
+    min-width: 0 !important;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
@@ -54,19 +54,25 @@
     margin: 0 !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
-    scrollbar-width: none;
+    padding-left: 0.7rem !important;
+    padding-right: 1.8rem !important;
   }
   .hero-topbar::-webkit-scrollbar {
     display: none;
   }
+  .hero-topbar > div:last-child {
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: auto !important;
+  }
   .hero-topbar-btn {
-    display: inline-block !important;
-    white-space: nowrap !important;
-    margin: 0 0.08rem !important;
+    flex: 0 0 auto !important;
     min-width: unset !important;
     max-width: unset !important;
-    font-size: 0.95rem !important;
-    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    margin: 0 0.08rem !important;
   }
   /* Hide back button on homepage */
   .hero-topbar-btn[href="/"] {
@@ -409,7 +415,7 @@
     right: 0 !important;
     left: 0 !important;
     width: 100vw !important;
-    min-width: 100vw !important;
+    min-width: 0 !important;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
@@ -423,19 +429,25 @@
     margin: 0 !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
-    scrollbar-width: none;
+    padding-left: 4vw !important;
+    padding-right: 12.3vw !important;
   }
   .hero-topbar::-webkit-scrollbar {
     display: none;
   }
+  .hero-topbar > div:last-child {
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: auto !important;
+  }
   .hero-topbar-btn {
-    display: inline-block !important;
-    white-space: nowrap !important;
-    margin: 0 0.06rem !important;
+    flex: 0 0 auto !important;
     min-width: unset !important;
     max-width: unset !important;
-    font-size: 0.85rem !important;
-    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    margin: 0 0.06rem !important;
   }
   .hero-topbar-btn[href="/"] {
     display: none !important;
