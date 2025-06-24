@@ -66,12 +66,7 @@ function HeroSection() {
       }}
     >
       <Navbar />
-      <div className="hero-content fade-in-up">
-        <img
-          src={process.env.PUBLIC_URL + "/Lumi-main image.png"}
-          alt="Lumi Full Body"
-          className="lumi-fullbody-img fade-in-up"
-        />
+      <div className="hero-content">
         <div className="lumi-hero-text fade-in-up">
           <h1 className="lumi-heading fade-in-up">LUMI </h1>
           <div className="lumi-subtitle fade-in-up">
@@ -83,6 +78,11 @@ function HeroSection() {
             <a href="#" className="lumi-hero-btn buy-lumi fade-in-up">Buy $LUMI</a>
           </div>
         </div>
+        <img
+          src={process.env.PUBLIC_URL + "/Lumi-main image.png"}
+          alt="Lumi Full Body"
+          className="lumi-fullbody-img fade-in-up"
+        />
       </div>
     </div>
   );
