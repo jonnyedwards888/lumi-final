@@ -25,17 +25,20 @@ html {
 }
 
 .hero-section {
+  /* === MOBILE BACKGROUND FIX START === */
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
+/* === MOBILE BACKGROUND FIX END === */
 
 .hero-content {
   display: flex;
