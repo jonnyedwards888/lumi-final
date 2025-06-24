@@ -40,6 +40,18 @@ html {
 }
 /* === MOBILE BACKGROUND FIX END === */
 
+/* === DESKTOP BACKGROUND PARALLAX RESTORE START === */
+@media (min-width: 900px) {
+  .hero-section {
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+/* === DESKTOP BACKGROUND PARALLAX RESTORE END === */
+
 .hero-content {
   display: flex;
   flex-direction: row;
