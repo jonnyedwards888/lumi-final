@@ -1,22 +1,27 @@
 @media (max-width: 500px) {
   .hero-topbar {
-    display: flex;
-    justify-content: center;
-    
-    flex-wrap: wrap !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0.3rem !important;
+    gap: 0.3rem !important;
   }
   .hero-topbar-btn {
-   
-    font-size: 1rem !important;
-    width: auto !important;
+    font-size: 0.85rem !important;
+    padding: 0.25rem 0.4rem !important;
+    margin: 0 !important;
+    width: fit-content !important;
     min-width: unset !important;
-    max-width: 90px !important;
-    flex: 0 1 auto !important;
-    padding: 0.3rem 0.5rem !important;
-    margin: 0 0.1rem !important;
-    box-sizing: border-box;
+    max-width: unset !important;
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
   }
-  
 }
 
 @media (max-width: 600px) {
@@ -53,47 +58,79 @@
     padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
   }
   .hero-content {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
     gap: 0.7rem !important;
     padding: 0 !important;
     margin-top: 0 !important;
+    width: 100% !important;
   }
   .lumi-fullbody-img {
-    margin-top: 0.2rem !important;
-    margin-bottom: 0.7rem !important;
-    align-self: center !important;
+    width: 150px !important;
+    min-width: 120px !important;
+    max-width: 40vw !important;
+    margin: 0.1rem 0 0 0 !important;
+    align-self: flex-start !important;
+    display: block !important;
+    object-fit: contain !important;
+    position: static !important;
+  }
+  .lumi-hero-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 0.2rem !important;
+    width: 100% !important;
+    flex: 1 1 0 !important;
+    text-align: left !important;
+    max-width: 100vw !important;
+  }
+  .lumi-heading, .lumi-subtitle {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+    max-width: 100vw !important;
+  }
+  .lumi-heading {
+    font-size: clamp(3.2rem, 14vw, 4.5rem) !important;
+    margin-bottom: 0.3rem !important;
+    margin-top: 0 !important;
+    line-height: 1.05 !important;
+  }
+  .lumi-subtitle {
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 0 !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+    white-space: normal !important;
+    word-break: break-word !important;
   }
   .lumi-hero-buttons {
-    margin: 0.5rem 0 0.5rem 0 !important;
-    padding: 0 !important;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
-    gap: 8px !important;
-    width: 100%;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     align-items: center !important;
-  }
-  .lumi-hero-btn {
-    flex: 1 1 0 !important;
-    min-width: 0 !important;
-    min-height: 44px !important;
-    font-size: 13px !important;
-    padding: 8px 12px !important;
-    margin: 0 !important;
-    box-sizing: border-box;
-    white-space: normal !important;
-    text-align: center !important;
-  }
-  .lumi-hero-text {
-    margin-top: 0.7rem !important;
-    margin-bottom: 0 !important;
-    align-items: center !important;
-    text-align: center !important;
+    gap: 0.3rem !important;
     width: 100% !important;
-    gap: 0.5rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .lumi-hero-buttons button, .lumi-hero-buttons a {
+    font-size: 0.85rem !important;
+    padding: 0.25rem 0.6rem !important;
+    min-width: unset !important;
+    max-width: 110px !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
   }
   .phases-section {
     width: 100vw !important;
@@ -300,66 +337,106 @@
 }
 
 @media (max-width: 430px) {
-  .hero-topbar > div {
-    width: 100%;
-    justify-content: center !important;
+  .hero-topbar {
     display: flex !important;
-    flex-wrap: wrap;
-    margin-bottom: 0.3rem;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0.3rem !important;
+    gap: 0.2rem !important;
   }
   .hero-topbar-btn {
-    font-size: 0.9rem !important;
-    padding: 0.35rem 0.7rem !important;
-    margin: 0.2rem !important;
-    min-width: 80px;
-    flex: 1 1 auto;
-    text-align: center;
+    font-size: 0.8rem !important;
+    padding: 0.25rem 0.35rem !important;
+    margin: 0 !important;
+    width: fit-content !important;
+    min-width: unset !important;
+    max-width: unset !important;
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    text-align: center !important;
   }
   .hero-section {
     padding: 0.2rem 0.2rem 0.2rem 0.2rem !important;
   }
   .hero-content {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 0.5rem !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 0.4rem !important;
     padding: 0 !important;
     margin-top: 0 !important;
+    width: 100% !important;
   }
   .lumi-fullbody-img {
-    margin-top: 0.1rem !important;
-    margin-bottom: 0.5rem !important;
-    align-self: center !important;
+    width: 110px !important;
+    min-width: 90px !important;
+    max-width: 48vw !important;
+    margin: 0.05rem 0 0 0 !important;
+    align-self: flex-start !important;
+    display: block !important;
+    object-fit: contain !important;
+    position: static !important;
+  }
+  .lumi-hero-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 0.1rem !important;
+    width: 100% !important;
+    flex: 1 1 0 !important;
+    text-align: left !important;
+    max-width: 100vw !important;
+  }
+  .lumi-heading, .lumi-subtitle {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+    max-width: 100vw !important;
+  }
+  .lumi-heading {
+    font-size: clamp(2.4rem, 18vw, 3.2rem) !important;
+    margin-bottom: 0.2rem !important;
+    margin-top: 0 !important;
+    line-height: 1.05 !important;
+  }
+  .lumi-subtitle {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.3rem !important;
+    margin-top: 0 !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+    white-space: normal !important;
+    word-break: break-word !important;
   }
   .lumi-hero-buttons {
-    margin: 0.4rem 0 0.4rem 0 !important;
-    padding: 0 !important;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
-    gap: 8px !important;
-    width: 100%;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     align-items: center !important;
-  }
-  .lumi-hero-btn {
-    flex: 1 1 0 !important;
-    min-width: 0 !important;
-    min-height: 44px !important;
-    font-size: 12px !important;
-    padding: 8px 8px !important;
-    margin: 0 !important;
-    box-sizing: border-box;
-    white-space: normal !important;
-    text-align: center !important;
-  }
-  .lumi-hero-text {
-    margin-top: 0.5rem !important;
-    margin-bottom: 0 !important;
-    align-items: center !important;
-    text-align: center !important;
+    gap: 0.2rem !important;
     width: 100% !important;
-    gap: 0.3rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .lumi-hero-buttons button, .lumi-hero-buttons a {
+    font-size: 0.75rem !important;
+    padding: 0.18rem 0.4rem !important;
+    min-width: unset !important;
+    max-width: 90px !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
   }
   .solutions-boxes-grid {
     grid-template-columns: 1fr !important;
