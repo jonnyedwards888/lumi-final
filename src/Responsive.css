@@ -36,7 +36,7 @@
 @media (max-width: 600px) {
   .hero-topbar {
     position: fixed !important;
-    top: 0;
+    top: 0 !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     width: 100vw !important;
@@ -49,32 +49,15 @@
     gap: 0.2rem !important;
     padding: 0.5rem 0.2rem 0.5rem 0.2rem !important;
     background: rgba(18, 15, 44, 0.95) !important;
-    z-index: 1000;
-    box-shadow: 0 2px 12px #0006;
+    z-index: 1000 !important;
+    box-shadow: 0 2px 12px #0006 !important;
     margin: 0 auto !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
     scrollbar-width: none;
   }
-  .hero-topbar::-webkit-scrollbar {
-    display: none;
-  }
-  .hero-topbar-btn {
-    font-size: 1rem !important;
-    width: auto !important;
-    min-width: 60px !important;
-    max-width: 110px !important;
-    flex: 0 1 auto !important;
-    padding: 0.3rem 0.7rem !important;
-    margin: 0 0.1rem !important;
-    box-sizing: border-box;
-    white-space: nowrap !important;
-    flex: 0 0 auto !important;
-    min-width: unset !important;
-    max-width: unset !important;
-  }
   .hero-section {
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    padding-top: 4.5rem !important;
   }
   .hero-content {
     flex-direction: row !important;
@@ -279,19 +262,25 @@
     display: block !important;
   }
   .solutions-boxes-grid {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
     width: 100% !important;
-    margin-bottom: 1rem !important;
-    padding: 0 0.5rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box !important;
   }
   .solutions-box {
-    min-width: 0 !important;
-    padding: 1.2rem 0.7rem !important;
-    min-height: 220px !important;
-    font-size: 0.97rem !important;
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  /* Add 1.2rem spacing below specific boxes */
+  .solutions-boxes-grid .solutions-box:nth-of-type(1),
+  .solutions-boxes-grid .solutions-box:nth-of-type(2),
+  .solutions-boxes-grid .solutions-box:nth-of-type(3),
+  .solutions-boxes-grid .solutions-box:nth-of-type(6) {
+    margin-bottom: 1.2rem !important;
   }
   /* AI Implementation section */
   .ai-implementation-section, .ai-implementation-text, .ai-implementation-content {
@@ -349,6 +338,45 @@
   .hero-topbar-close-btn {
     margin-left: auto !important;
   }
+  .solutions-section {
+    padding-left: 1.1rem !important;
+    padding-right: 1.1rem !important;
+    box-sizing: border-box !important;
+  }
+  .solutions-main-heading,
+  .solutions-feature-row,
+  .solutions-stats-row,
+  .solutions-boxes-grid,
+  .solutions-callout-box {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* Center headers and subheaders in solution/info boxes */
+  .solutions-box h3,
+  .solutions-box h4,
+  .solutions-box-title,
+  .solutions-box-label {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  /* Ensure app ecosystem image is perfectly centered with equal spacing */
+  .solutions-feature-img,
+  .app-ecosystem-img-hover,
+  .app-ecosystem-img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 98vw !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
 }
 
 @media (min-width: 601px) {
@@ -360,36 +388,29 @@
 
 @media (max-width: 430px) {
   .hero-topbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100vw !important;
+    min-width: 100vw !important;
     display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
     justify-content: center !important;
     align-items: center !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    width: fit-content !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    padding: 0.3rem !important;
     gap: 0.2rem !important;
+    padding: 0.3rem !important;
+    background: rgba(18, 15, 44, 0.95) !important;
+    z-index: 1000 !important;
+    box-shadow: 0 2px 12px #0006 !important;
+    margin: 0 auto !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
     scrollbar-width: none;
   }
-  .hero-topbar::-webkit-scrollbar {
-    display: none;
-  }
-  .hero-topbar-btn {
-    font-size: 0.8rem !important;
-    padding: 0.25rem 0.35rem !important;
-    margin: 0 !important;
-    width: fit-content !important;
-    min-width: unset !important;
-    max-width: unset !important;
-    flex: 0 0 auto !important;
-    white-space: nowrap !important;
-    text-align: center !important;
-  }
   .hero-section {
-    padding: 0.2rem 0.2rem 0.2rem 0.2rem !important;
+    padding-top: 4.5rem !important;
   }
   .hero-content {
     flex-direction: row !important;
@@ -467,14 +488,23 @@
     box-sizing: border-box !important;
   }
   .solutions-boxes-grid {
-    grid-template-columns: 1fr !important;
-    gap: 0.7rem !important;
-    padding: 0 0.2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
   }
   .solutions-box {
-    padding: 1rem 0.5rem !important;
-    min-height: 180px !important;
-    font-size: 0.93rem !important;
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .solutions-boxes-grid .solutions-box:nth-of-type(1),
+  .solutions-boxes-grid .solutions-box:nth-of-type(3),
+  .solutions-boxes-grid .solutions-box:nth-of-type(6) {
+    margin-bottom: 1.2rem !important;
   }
   .ai-implementation-img, .app-ecosystem-img {
     width: 98vw !important;
@@ -488,5 +518,101 @@
   }
   .hero-topbar-close-btn {
     margin-left: auto !important;
+  }
+  .solutions-box h3,
+  .solutions-box h4,
+  .solutions-box-title,
+  .solutions-box-label {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  .solutions-feature-img,
+  .app-ecosystem-img-hover,
+  .app-ecosystem-img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 98vw !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Perfectly center all main content containers on mobile */
+  .solutions-section,
+  .about-section,
+  .founder-section,
+  .data-section,
+  .phases-section,
+  .coming-soon-section,
+  .footer-section,
+  .main-heading,
+  .page-section-heading,
+  .team-heading,
+  .news-section {
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  /* Center all grid and row containers */
+  .solutions-feature-row,
+  .solutions-stats-row,
+  .solutions-boxes-grid,
+  .solutions-callout-box,
+  .footer-content,
+  .footer-left,
+  .footer-right,
+  .footer-resources,
+  .footer-socials,
+  .news-content,
+  .news-cards-section,
+  .news-detail-section {
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  /* Ensure all cards and info boxes are flush and centered */
+  .solutions-box,
+  .coming-soon-item,
+  .phases-card,
+  .news-card,
+  .about-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* Center all text blocks */
+  .solutions-section p,
+  .about-section p,
+  .founder-section p,
+  .data-section p,
+  .phases-section p,
+  .coming-soon-section p,
+  .footer-section p,
+  .news-section p {
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }

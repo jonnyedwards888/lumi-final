@@ -777,3 +777,58 @@ html {
   color: #18153a;
   border-color: #fff;
 }
+
+@media (max-width: 600px) {
+  /* Sleek purple style for fixed mobile back button */
+  .hero-topbar-btn[href="/"] {
+    position: fixed !important;
+    top: 0.7rem !important;
+    left: 0.7rem !important;
+    z-index: 2001 !important;
+    background: #b16fc9 !important;
+    border: 2px solid #b16fc9 !important;
+    border-radius: 50% !important;
+    width: 46px !important;
+    height: 46px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2px 12px #b16fc988, 0 1px 8px #0008 !important;
+    padding: 0 !important;
+    transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+  }
+  .hero-topbar-btn[href="/"]:hover {
+    background: #a23bb9 !important;
+    border-color: #fff !important;
+    box-shadow: 0 2px 16px #b16fc9cc, 0 1px 8px #0008 !important;
+  }
+  .hero-topbar-btn[href="/"] img {
+    width: 28px !important;
+    height: 28px !important;
+    margin: 0 !important;
+    filter: brightness(0) invert(1) !important; /* Make arrow white */
+  }
+  /* Make About page partner carousel arrows slightly smaller and keep black background/outline on mobile */
+  .about-section .flex.flex-row.items-center.justify-center.w-full.mb-16 > button {
+    font-size: 2.1rem !important;
+    width: 2.3rem !important;
+    height: 2.3rem !important;
+    background: #18153a !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 12px #0008 !important;
+    border: 2px solid #fff !important;
+    opacity: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 2;
+    transition: background 0.2s, color 0.2s;
+  }
+  .about-section .flex.flex-row.items-center.justify-center.w-full.mb-16 > button:disabled {
+    opacity: 0.3 !important;
+    background: #333 !important;
+    color: #bbb !important;
+    border: 2px solid #bbb !important;
+  }
+}
