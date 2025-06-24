@@ -62,25 +62,25 @@ function HeroSection() {
     <div
       className="hero-section"
       style={{
-        backgroundImage: 'url("/Lum-universe-img.png")',
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/Lum-universe-img.png"})`,
       }}
     >
       <Navbar />
-      <div className="hero-content">
+      <div className="hero-content fade-in-up">
         <img
           src={process.env.PUBLIC_URL + "/Lumi-main image.png"}
           alt="Lumi Full Body"
-          className="lumi-fullbody-img"
+          className="lumi-fullbody-img fade-in-up"
         />
-        <div className="lumi-hero-text">
-          <h1 className="lumi-heading">LUMI </h1>
-          <div className="lumi-subtitle">
+        <div className="lumi-hero-text fade-in-up">
+          <h1 className="lumi-heading fade-in-up">LUMI </h1>
+          <div className="lumi-subtitle fade-in-up">
             the first AI person-centred care agent on chain.
           </div>
-          <div className="lumi-hero-buttons">
-            <a href={process.env.PUBLIC_URL + "/Lumi-Lite-Paper.pdf"} className="lumi-hero-btn" target="_blank" rel="noopener noreferrer">Lite Paper</a>
-            <a href="#" className="lumi-hero-btn">Register</a>
-            <a href="#" className="lumi-hero-btn">Buy $LUMI</a>
+          <div className="lumi-hero-buttons fade-in-up">
+            <a href={process.env.PUBLIC_URL + "/Lumi-Lite-Paper.pdf"} className="lumi-hero-btn fade-in-up" target="_blank" rel="noopener noreferrer">Lite Paper</a>
+            <a href="#" className="lumi-hero-btn fade-in-up">Register</a>
+            <a href="#" className="lumi-hero-btn buy-lumi fade-in-up">Buy $LUMI</a>
           </div>
         </div>
       </div>

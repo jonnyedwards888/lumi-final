@@ -119,10 +119,12 @@
     max-width: 100vw !important;
   }
   .lumi-heading {
-    font-size: clamp(3.6rem, 14vw, 4.6rem) !important;
-    margin-bottom: 0.38rem !important;
-    margin-top: 0 !important;
-    line-height: 1.02 !important;
+    font-size: clamp(4.6rem, 22vw, 6.2rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.08em !important;
+    text-shadow: 0 0 24px #fff, 0 0 12px #fff6, 0 0 4px #fff;
+    line-height: 1.05 !important;
+    margin-bottom: 1.2rem !important;
   }
   .lumi-subtitle {
     font-size: 1rem !important;
@@ -493,10 +495,12 @@
     max-width: 100vw !important;
   }
   .lumi-heading {
-    font-size: clamp(2.8rem, 18vw, 3.8rem) !important;
-    margin-bottom: 0.28rem !important;
-    margin-top: 0 !important;
-    line-height: 1.04 !important;
+    font-size: clamp(3.8rem, 28vw, 5.2rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.08em !important;
+    text-shadow: 0 0 24px #fff, 0 0 12px #fff6, 0 0 4px #fff;
+    line-height: 1.05 !important;
+    margin-bottom: 1.1rem !important;
   }
   .lumi-subtitle {
     font-size: 0.95rem !important;
