@@ -222,6 +222,81 @@
     margin: 0 auto !important;
     display: block !important;
   }
+  .solutions-boxes-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+    padding: 0 0.5rem !important;
+    box-sizing: border-box !important;
+  }
+  .solutions-box {
+    min-width: 0 !important;
+    padding: 1.2rem 0.7rem !important;
+    min-height: 220px !important;
+    font-size: 0.97rem !important;
+  }
+  /* AI Implementation section */
+  .ai-implementation-section, .ai-implementation-text, .ai-implementation-content {
+    text-align: center !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .ai-implementation-img {
+    display: block !important;
+    margin: 1rem auto 0 auto !important;
+    width: 90vw !important;
+    max-width: 350px !important;
+    height: auto !important;
+  }
+
+  /* App ecosystem / Why's Remelife section */
+  .app-ecosystem-section, .app-ecosystem-text, .app-ecosystem-content {
+    text-align: center !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .app-ecosystem-img {
+    display: block !important;
+    margin: 1rem auto 0 auto !important;
+    width: 90vw !important;
+    max-width: 350px !important;
+    height: auto !important;
+  }
+
+  /* AI Implementation and App Ecosystem sections */
+  .solutions-row, .solutions-feature-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.7rem !important;
+  }
+  .solutions-feature-img, .modal-img, .app-ecosystem-img-hover {
+    display: block !important;
+    margin: 1rem auto 0 auto !important;
+    width: 90vw !important;
+    max-width: 350px !important;
+    height: auto !important;
+  }
+  .solutions-feature-title, .solutions-feature-label, .solutions-feature-desc {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .main-heading, .page-section-heading, .about-heading, .team-heading, h1, h2 {
+    margin-top: 72px !important;
+    display: block;
+  }
+}
+
+@media (min-width: 601px) {
+  .main-heading, .page-section-heading, .about-heading, .team-heading, h1, h2 {
+    margin-top: 96px !important;
+    display: block;
+  }
 }
 
 @media (max-width: 430px) {
@@ -285,5 +360,25 @@
     text-align: center !important;
     width: 100% !important;
     gap: 0.3rem !important;
+  }
+  .solutions-boxes-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.7rem !important;
+    padding: 0 0.2rem !important;
+  }
+  .solutions-box {
+    padding: 1rem 0.5rem !important;
+    min-height: 180px !important;
+    font-size: 0.93rem !important;
+  }
+  .ai-implementation-img, .app-ecosystem-img {
+    width: 98vw !important;
+    max-width: 98vw !important;
+    margin: 0.7rem auto 0 auto !important;
+  }
+  .solutions-feature-img, .modal-img, .app-ecosystem-img-hover {
+    width: 98vw !important;
+    max-width: 98vw !important;
+    margin: 0.7rem auto 0 auto !important;
   }
 }
