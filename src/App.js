@@ -62,7 +62,7 @@ function HeroSection() {
     <div
       className="hero-section"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL + "/Lum-universe-img.png"})`,
+        backgroundImage: 'url("/Lum-universe-img.png")',
       }}
     >
       <Navbar />
