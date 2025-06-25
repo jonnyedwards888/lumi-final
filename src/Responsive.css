@@ -113,25 +113,24 @@
     margin: 0 auto 2.2rem auto !important;
   }
   .lumi-fullbody-img-inline {
-    width: 180px !important;
-    min-width: 120px !important;
-    max-width: 38vw !important;
-    margin: 0 auto 0.7rem auto !important;
+    width: 60px !important;
+    min-width: 40px !important;
+    max-width: 18vw !important;
     display: block !important;
+    margin: -1.2rem auto 0.5rem auto !important;
     object-fit: contain !important;
     position: static !important;
-    margin-left: auto !important;
+    margin-left: -18px !important;
     margin-right: auto !important;
-    transform: none !important;
   }
   .lumi-subtitle {
     font-size: 1.25rem !important;
     font-weight: 600 !important;
     line-height: 1.4 !important;
     text-align: center !important;
-    margin: 0 auto !important;
+    margin: 0 !important;
     max-width: 80vw !important;
-    display: block !important;
+    display: inline-block !important;
   }
   .lumi-fullbody-img {
     width: 80px !important;
@@ -489,25 +488,25 @@
     margin: 0 auto 1.5rem auto !important;
   }
   .lumi-fullbody-img-inline {
-    width: 110px !important;
-    min-width: 65px !important;
-    max-width: 45vw !important;
-    margin: 0 auto 0.5rem auto !important;
+    width: 74px !important;
+    min-width: 48px !important;
+    max-width: 52vw !important;
     display: block !important;
+    margin: -0.7rem auto 0.3rem auto !important;
     object-fit: contain !important;
     position: static !important;
-    margin-left: auto !important;
+    margin-left: 160px !important;
     margin-right: auto !important;
-    transform: none !important;
+    margin-top: 30px !important;
   }
   .lumi-subtitle {
     font-size: 1.1rem !important;
     font-weight: 600 !important;
     line-height: 1.4 !important;
     text-align: center !important;
-    margin: 0 auto !important;
+    margin: 0 !important;
     max-width: 82vw !important;
-    display: block !important;
+    display: inline-block !important;
   }
   .lumi-fullbody-img {
     width: 54px !important;
