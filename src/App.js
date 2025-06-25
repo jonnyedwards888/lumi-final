@@ -69,8 +69,13 @@ function HeroSection() {
       <div className="hero-content">
         <div className="lumi-hero-text fade-in-up">
           <h1 className="lumi-heading fade-in-up">LUMI </h1>
-          <div className="lumi-subtitle fade-in-up">
-            the first AI person-centred care agent on chain.
+          <div className="lumi-subtitle-avatar-row fade-in-up">
+            <span className="lumi-subtitle">the first AI person-centred care agent on chain.</span>
+            <img
+              src={process.env.PUBLIC_URL + "/Lumi-main image.png"}
+              alt="Lumi Full Body"
+              className="lumi-fullbody-img-inline fade-in-up"
+            />
           </div>
           <div className="lumi-hero-buttons fade-in-up">
             <a href={process.env.PUBLIC_URL + "/Lumi-Lite-Paper.pdf"} className="lumi-hero-btn fade-in-up" target="_blank" rel="noopener noreferrer">Lite Paper</a>
@@ -78,11 +83,6 @@ function HeroSection() {
             <a href="#" className="lumi-hero-btn buy-lumi fade-in-up">Buy $LUMI</a>
           </div>
         </div>
-        <img
-          src={process.env.PUBLIC_URL + "/Lumi-main image.png"}
-          alt="Lumi Full Body"
-          className="lumi-fullbody-img fade-in-up"
-        />
       </div>
     </div>
   );
