@@ -79,7 +79,9 @@
     display: none !important;
   }
   .hero-section {
-    padding-top: 4.5rem !important;
+    
+    
+    background-position: 40% center !important;
   }
   .hero-content {
     flex-direction: column !important;
@@ -97,15 +99,7 @@
     gap: 1.2rem !important;
     margin: 0 auto !important;
   }
-  .lumi-heading {
-    text-align: center !important;
-    margin: 0 auto 1.2rem auto !important;
-    font-size: clamp(4.6rem, 22vw, 6.2rem) !important;
-    font-weight: 800 !important;
-    letter-spacing: 0.08em !important;
-    text-shadow: 0 0 24px #fff, 0 0 12px #fff6, 0 0 4px #fff;
-    line-height: 1.05 !important;
-  }
+  
   .lumi-subtitle-avatar-row {
     flex-direction: column !important;
     align-items: center !important;
@@ -113,25 +107,19 @@
     margin: 0 auto 2.2rem auto !important;
   }
   .lumi-fullbody-img-inline {
-    width: 60px !important;
-    min-width: 40px !important;
-    max-width: 18vw !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    
+    display: flex;
     display: block !important;
-    margin: -1.2rem auto 0.5rem auto !important;
-    object-fit: contain !important;
-    position: static !important;
-    margin-left: -18px !important;
-    margin-right: auto !important;
+    
+    /* Default (600px) size */
+    
+    min-width: 50px !important;
+    max-width: 29vw !important;
   }
-  .lumi-subtitle {
-    font-size: 1.25rem !important;
-    font-weight: 600 !important;
-    line-height: 1.4 !important;
-    text-align: center !important;
-    margin: 0 !important;
-    max-width: 80vw !important;
-    display: inline-block !important;
-  }
+
   .lumi-fullbody-img {
     width: 80px !important;
     min-width: 60px !important;
@@ -142,21 +130,8 @@
     object-fit: contain !important;
     position: static !important;
   }
-  .lumi-hero-buttons {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 1.2rem !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-  }
-  .lumi-hero-buttons button, .lumi-hero-buttons a {
-    min-height: 18px !important;
-    font-size: 0.85rem !important;
-    padding: 0.18rem 0 !important;
-    border-radius: 999px !important;
-  }
+  
+  
   .phases-section {
     width: 100vw !important;
     padding: 1.2rem 0.2rem !important;
@@ -455,6 +430,7 @@
   }
   .hero-section {
     padding-top: 4.5rem !important;
+    min-height: 220px !important;
   }
   .hero-content {
     flex-direction: column !important;
@@ -476,7 +452,7 @@
     text-align: center !important;
     margin: 0 auto 1rem auto !important;
     font-size: clamp(3.8rem, 28vw, 5.2rem) !important;
-    font-weight: 800 !important;
+    font-weight: 650 !important;
     letter-spacing: 0.08em !important;
     text-shadow: 0 0 24px #fff, 0 0 12px #fff6, 0 0 4px #fff;
     line-height: 1.05 !important;
@@ -488,16 +464,12 @@
     margin: 0 auto 1.5rem auto !important;
   }
   .lumi-fullbody-img-inline {
-    width: 74px !important;
-    min-width: 48px !important;
-    max-width: 52vw !important;
-    display: block !important;
-    margin: -0.7rem auto 0.3rem auto !important;
-    object-fit: contain !important;
-    position: static !important;
-    margin-left: 160px !important;
-    margin-right: auto !important;
-    margin-top: 30px !important;
+    /* Only override what's different for 430px */
+    width: 88px !important;
+    min-width: 49px !important;
+    max-width: 2vw !important;
+    bottom: 15% !important;
+    left: 70% !important;
   }
   .lumi-subtitle {
     font-size: 1.1rem !important;
@@ -507,6 +479,10 @@
     margin: 0 !important;
     max-width: 82vw !important;
     display: inline-block !important;
+    padding-bottom: 15vh !important;
+    padding-top: 2vh !important;
+    margin-bottom: 0 !important;
+    margin-top: -1.2rem !important;
   }
   .lumi-fullbody-img {
     width: 54px !important;
@@ -519,19 +495,22 @@
     position: static !important;
   }
   .lumi-hero-buttons {
-    flex-direction: column !important;
+    flex-direction: row !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 1rem !important;
     width: 100% !important;
     margin: 0 auto !important;
     padding: 0 !important;
+    margin-top: 5vh !important;
   }
   .lumi-hero-buttons button, .lumi-hero-buttons a {
-    min-height: 14px !important;
+    min-height: 18px !important;
     font-size: 0.8rem !important;
     padding: 0.13rem 0 !important;
     border-radius: 999px !important;
+    max-width: 150px !important;
+    width: 90% !important;
   }
   .solutions-boxes-grid {
     display: flex !important;

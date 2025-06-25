@@ -37,6 +37,8 @@ html {
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
 }
 /* === MOBILE BACKGROUND FIX END === */
 
@@ -704,7 +706,8 @@ html {
     text-align: center;
   }
   .hero-section {
-    padding: 0.5rem 0 !important;
+    padding: 6rem 3rem    !important;
+    
   }
   .hero-content {
     flex-direction: column !important;
@@ -830,5 +833,8 @@ html {
     background: #333 !important;
     color: #bbb !important;
     border: 2px solid #bbb !important;
+  }
+  .hero-section {
+    background-position: center 38% !important;
   }
 }
